@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflective Question</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; background-color: #f5f5f5; }
+    h1 { color: #4CAF50; }
+    .question { font-size: 1.5em; margin: 20px 0; color: #333; }
+    a { text-decoration: none; color: #4CAF50; font-size: 1.2em; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Reflect on Your Day</h1>
+  <p class="question" id="question"></p>
+  <a href="index.html">Go Back to Homepage</a>
+
+  <script>
+    // Array of 15 reflective questions
+    const questions = [
+      "What made you smile today?",
+      "What was the most challenging part of your day?",
+      "What small action can I take to feel a little better?",
+      "Did you achieve something you're proud of today?",
+      "What are three things I’m grateful for, even on a tough day?",
+      "What did you learn today?",
+      "Who made your day better today?",
+      "What is one thing you could have done differently today?",
+      "How do you feel about your interactions with others today?",
+      "What was your favorite moment of the day?",
+      "What would I say to a friend if they were in my shoes?",
+      "Is there anything you need to let go of today?",
+      "How would you describe your mood right now?",
+      "What do I need to do to recharge and take care of myself today?",
+      "What is one thing you want to remember about today?"
+    ];
+
+    // Select a random question
+    const randomIndex = Math.floor(Math.random() * questions.length);
+    const randomQuestion = questions[randomIndex];
+
+    // Display the question
+    document.getElementById("question").textContent = randomQuestion;
+  </script>
+</body>
+</html>

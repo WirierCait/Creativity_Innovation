@@ -1,0 +1,76 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;   /* Sets the font for the page */
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;       /* Light gray background for the page */
+}
+
+/* Chat box styles */
+#chat-box {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ddd;          /* Light gray border */
+    padding: 10px;
+    overflow-y: scroll;              /* Enables scrolling if content overflows */
+    background: #fff;                /* White background for the chat box */
+    margin-bottom: 10px;             /* Adds some space below the chat box */
+    border-radius: 8px;              /* Rounded corners */
+}
+
+/* Message styles */
+.message {
+    margin: 10px 0;                  /* Adds space between messages */
+    padding: 5px;
+    border-radius: 5px;              /* Rounded corners for each message */
+}
+
+/* User message styles */
+.user {
+    background-color: #e0f7fa;       /* Light blue background for user messages */
+    color: #00796b;                  /* Dark teal color for text */
+    text-align: left;                 /* Aligns user messages to the left */
+}
+
+/* Bot message styles */
+.bot {
+    background-color: #e8f5e9;       /* Light green background for bot messages */
+    color: #388e3c;                  /* Dark green color for text */
+    text-align: left;                 /* Aligns bot messages to the left */
+}
+
+/* Input field styles */
+#input {
+    width: calc(100% - 100px);        /* Takes up remaining width minus the button width */
+    padding: 10px;
+    border: 1px solid #ccc;          /* Light border around the input field */
+    border-radius: 5px;              /* Rounded corners */
+    font-size: 16px;                  /* Slightly larger font for easy reading */
+    margin-right: 10px;               /* Space between the input and the button */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;               /* Adds padding inside the button */
+    background-color: #4CAF50;        /* Green background for the button */
+    color: white;                     /* White text on the button */
+    border: none;                     /* Removes the border */
+    border-radius: 5px;               /* Rounded corners */
+    cursor: pointer;                  /* Changes the mouse pointer to a hand */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #45a049;        /* Darker green when hovering */
+}
+
+/* Links (e.g., "Go Back to Homepage") */
+a {
+    text-decoration: none;            /* Removes the underline from links */
+    color: #388e3c;                   /* Dark green text color for links */
+    font-size: 16px;                  /* Slightly larger font for the link */
+}
+
+a:hover {
+    color: #00796b;                   /* Changes the color on hover */
+}
